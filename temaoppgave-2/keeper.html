@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keepere - PlayerShop</title>
+    
+    <link rel="stylesheet" href="./Styling/header.css">
+    <link rel="stylesheet" href="./Styling/footer.css">
+    <link rel="stylesheet" href="./Styling/keeper.css">
+    
+    <script src="./JavaScript/playershop.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav id="header-logo">
+            <a href="index.html"><i class="fas fa-futbol"></i></a>
+        </nav>
+
+        <nav id="header-mainmenu">
+            <a href="index.html">Hjem</a>
+            <a class="selected" href="keeper.html">Keepere</a>
+            <a href="utespiller.html">Utespillere</a>
+        </nav>
+
+        <input type="checkbox" id="cb">
+
+        <label id="handlekurv" for="cb">
+            <p><i class="fas fa-shopping-basket"></i></p>
+        </label>
+
+        <nav id="cart">
+            <section class="hk-section">
+                <h1 class="cart-header-header">Handlekurv</h1>
+    
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Spiller</span>
+                    <span class="cart-price cart-header cart-column">Pris</span>
+                    <span class="cart-quantity cart-header cart-column">Antall</span>
+                </div>
+                
+                <div class="cart-items"></div>
+                    
+                <div class="cart-total">
+                    <strong class="cart-total-title">Totalpris: </strong>
+                    <span class="cart-total-price">€0</span>
+                </div>
+                    
+                <button class="btn-buynow" type="button">Bekreft kjøp</button>
+            </section>
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <h1>Keepere</h1>
+
+        <div class="container">
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/de-gea.png" alt="David De Gea"></a>
+                    <p class="beskrivelse">(29å) Rutinert skuddstopper fra Spania</p>
+                </article>
+                <h2 class="item-title">David De Gea</h2>
+                <article class="price">
+                    <span class="item-price">€35 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/alisson.png" alt="Alisson"></a>
+                    <p class="beskrivelse">(28å) Teknisk god målvakt fra Brasil</p>
+                </article>
+                <h2 class="item-title">Alisson Becker</h2>
+                <article class="price">
+                    <span class="item-price">€80 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/deano.png" alt="Dean Henderson"></a>
+                    <p class="beskrivelse">(23å) Eksentrisk ung skuddstopper fra England</p>
+                </article>
+                <h2 class="item-title">Dean Henderson</h2>
+                <article class="price">
+                    <span class="item-price">€20 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+                
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/donnarumma.png" alt="Gianluigi Donnarumma"></a>
+                    <p class="beskrivelse">(21å) Ungt, men unikt rutinert, vidunderbarn fra Italia</p>
+                </article>
+                <h2 class="item-title">Gianluigi Donnarumma</h2>
+                <article class="price">
+                    <span class="item-price">€60 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/ederson.png" alt="Ederson"></a>
+                    <p class="beskrivelse">(27å) Rolig, teknisk god målvakt fra Brasil</p>
+                </article>
+                <h2 class="item-title">Ederson Moraes</h2>
+                <article class="price">
+                    <span class="item-price">€56 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/jarstein.png" alt="Rune Almenning Jarstein"></a>
+                    <p class="beskrivelse">(36å) Rutinert skuddstopper fra Norge</p>
+                </article>
+                <h2 class="item-title">Rune Almenning Jarstein</h2>
+                <article class="price">
+                    <span class="item-price">€0.8 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/kepa.png" alt="Kepa Arrizabalaga"></a>
+                    <p class="beskrivelse">(26å) Tabbeutsatt usikkerhetsmoment fra Spania</p>
+                </article>
+                <h2 class="item-title">Kepa Arrizabalaga</h2>
+                <article class="price">
+                    <span class="item-price">€18 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/ter-stegen.png" alt="Marc Andre Ter-Stegen"></a>
+                    <p class="beskrivelse">(28å) Meget sterk skuddstopper fra Tyskland</p>
+                </article>
+                <h2 class="item-title">Marc-Andre Ter Stegen</h2>
+                <article class="price">
+                    <span class="item-price">€75 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/karius.png" alt="Loris Karius"></a>
+                    <p class="beskrivelse">(27å) Tabbeutsatt gående katastrofe fra Tyskland</p>
+                </article>
+                <h2 class="item-title">Loris Karius</h2>
+                <article class="price">
+                    <span class="item-price">€3.2 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h1 id="footer-h1">PlayerShop</h1>
+    </footer>
+    
+</body>
+</html>

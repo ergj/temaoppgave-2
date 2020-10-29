@@ -1,0 +1,239 @@
+* {
+    font-size: 100%;
+}
+
+header {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.625rem;
+    height: 6rem;
+    z-index: 9;
+}
+
+#header-logo, #header-mainmenu {
+    padding: 0.5rem;
+    left: 2.5rem;
+    margin-right: 0.625rem;
+    color: lightsteelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-decoration: none;
+    justify-self: center;
+}
+
+#header-mainmenu {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    align-self: center;
+    padding: 2rem;
+}
+
+a:hover {
+    color: steelblue;
+}
+
+.selected {
+    color: steelblue;
+}
+
+#header-logo {
+    background-color: aliceblue;
+    color:grey;
+    position: absolute;
+    left: 2.5rem;
+    font-size: 5rem;
+}
+
+#cb {
+    position: absolute;
+    left: 6.25rem;
+    display: none;
+}
+
+#handlekurv {
+    color: lightsteelblue;
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: absolute;
+    justify-items: center;
+    right: 2.5rem;
+    align-self: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#handlekurv:hover {
+    color: steelblue;
+}
+
+#handlekurv p i {
+    font-size: 1.7rem;
+}
+
+#cart {
+    background-color: white;
+    min-height: 40vh;
+    max-height: 75vh;
+    overflow: auto;
+    min-width: 30vw;
+    max-width: fit-content;
+    align-content: space-between;
+    display: grid;
+    position: absolute;
+    right: 250rem;
+    border: solid steelblue 1px;
+}
+
+#cb:checked ~ #cart {
+    right: 1.5rem;
+    top: 1.6rem;
+    background-color: white;
+}
+
+#cb:checked ~ #handlekurv {
+    color: steelblue;
+}
+
+.hk-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.cart-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid steelblue;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: steelblue;
+}
+
+.cart-price {
+    width: 35%;
+    font-size: 1.5rem;
+    color: steelblue;
+}
+
+.cart-quantity {
+    width: 30%;
+    font-size: 1.5rem;
+    color: steelblue;
+}
+
+.cart-title {
+    color: steelblue;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cart-image {
+    width: 5rem;
+    height: 5rem;
+}
+
+.cart-price {
+    color: steelblue;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cart-quantity-input {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.btn-danger {
+    color: white;
+    background-color: steelblue;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: steelblue;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    font-weight: 500;
+    color: steelblue;
+    font-size: 1.5rem;
+
+}
+
+.btn-buynow {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+    border: 1px lightsteelblue solid;
+    border-radius: 0.3rem;
+}
+
+.btn-buynow:hover {
+    background-color: lightsteelblue;
+    color: steelblue;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjem - PlayerShop</title>
+    
+    <link rel="stylesheet" href="./Styling/header.css">
+    <link rel="stylesheet" href="./Styling/footer.css">
+    <link rel="stylesheet" href="./Styling/index.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav id="header-logo">
+            <a href="index.html"><i class="fas fa-futbol"></i></a>
+        </nav>
+
+        <nav id="header-mainmenu">
+            <a class="selected" href="index.html">Hjem</a>
+            <a href="keeper.html">Keepere</a>
+            <a href="utespiller.html">Utespillere</a>
+        </nav>
+
+        <input type="checkbox" id="cb">
+
+        <label id="handlekurv" for="cb">
+            <p><i class="fas fa-shopping-basket"></i></p>
+        </label>
+
+        <nav id="cart">
+            <section class="hk-section">
+                <h1 class="cart-header-header">Handlekurv</h1>
+    
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Spiller</span>
+                    <span class="cart-price cart-header cart-column">Pris</span>
+                    <span class="cart-quantity cart-header cart-column">Antall</span>
+                </div>
+                
+                <div class="cart-items"></div>
+                    
+                <div class="cart-total">
+                    <strong class="cart-total-title">Totalpris: </strong>
+                    <span class="cart-total-price">€0</span>
+                </div>
+                    
+                <button class="btn-buynow" type="button">Bekreft kjøp</button>
+            </section>
+        </nav>
+        
+    </header>
+
+    <main>
+        <h1>Velkommen til PlayerShop!</h1>
+
+        <p>I en verden der spekulasjoner og overganger har blitt mer interessant enn sesong, kamper, prestasjoner og turneringer - har fotballverdenen gått bananas; Unge menn selges ikke for tusener - ikke for millioner - men for milliarder av kroner.</p>
+        <p>Men hvordan fungerer egentlig overgangsmarkedet? Dette er et ukjent fenomen, som kun de involverte i forhandlinger kjenner til. Mange utenforstående spekulerer, hyller og kritiserer de som representerer deres klubber og signerer deres nye favorittspillere. Likevel er det nesten alltid kun spekulasjoner på priser og lignende. Mangelen på transparens er overveldende...</p>
+
+        <h2>Og det er her PlayerShop kommer inn</h2>
+
+        <p>PlayerShop ønsker å revolusjonere markedet for fotballspillere, der priser er fastsatt basert på en algoritme innhentet fra anerkjente<a class="hl-transfermarkt" href="https://www.transfermarkt.com/"> TransferMarkt</a>, og gjør det mulig å gjennomføre raske kjøp til en riktig, markedsbasert pris.</p>
+        <p>Dette er din mulighet til å kjøpe spillerne du elsker. Bygg ditt drømmelag i dag.</p>
+
+        <h2>Dette er virkelighetens FIFA Ultimate Team ©</h2>
+    </main>
+
+    <footer>
+        <h1 id="footer-h1">PlayerShop</h1>
+    </footer>
+    
+</body>
+</html>

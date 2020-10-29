@@ -1,0 +1,130 @@
+* {
+    font-size: 100%;
+}
+
+body {
+    background-color: slategrey;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 9rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+h1 {
+    color: steelblue;
+    font-size: 3rem;
+}
+
+.df, .mf, .fw {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    left: 0.5rem;
+    right: 0.5rem;
+    padding: 1.5rem;
+    object-fit: cover;
+    align-items: center;
+}
+
+.df div, .mf div, .fw div {
+    position: relative;
+    width: 17rem;
+    height: fit-content;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin: 0.05rem;  
+}
+
+.df div:hover, .mf div:hover, .fw div:hover {
+    border: steelblue solid 1px;
+    background-color: lightsteelblue;
+}
+
+img {
+    height: 12.5rem;
+    width: 12.5rem;
+}
+
+.img-wrap {
+    border: none;
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+.beskrivelse {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(201, 214, 230);
+    color: black;
+    font-size: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    text-align:  center;
+    justify-content: center;
+}
+
+.img-wrap:hover .beskrivelse {
+    visibility: visible;
+    opacity: 0.8;
+    
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: steelblue;
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    flex: 1;
+    border: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0.5rem 1rem 1rem;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+.price:hover {
+    border: none;
+    background-color: inherit;
+}
+
+.item-price {
+    font-weight: 600;
+    color: black;
+    margin-right: 1rem;
+}
+
+.add2cart {
+    background: transparent;
+    border: none;
+    color: black;
+    position: right;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.add2cart:hover {
+    color: white;
+}

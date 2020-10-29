@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utespillere - PlayerShop</title>
+
+    <link rel="stylesheet" href="./Styling/header.css">
+    <link rel="stylesheet" href="./Styling/footer.css">
+    <link rel="stylesheet" href="./Styling/utespiller.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./JavaScript/playershop.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <nav id="header-logo">
+            <a href="index.html"><i class="fas fa-futbol"></i></a>
+        </nav>
+
+        <nav id="header-mainmenu">
+            <a href="index.html">Hjem</a>
+            <a href="keeper.html">Keepere</a>
+            <a  class="selected" href="utespiller.html">Utespillere</a>
+        </nav>
+
+        <input type="checkbox" id="cb">
+
+        <label id="handlekurv" for="cb">
+            <i class="fas fa-shopping-basket"></i>
+        </label>
+
+        <nav id="cart">
+            <section class="hk-section">
+                <h1 class="cart-header-header">Handlekurv</h1>
+    
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Spiller</span>
+                    <span class="cart-price cart-header cart-column">Pris</span>
+                    <span class="cart-quantity cart-header cart-column">Antall</span>
+                </div>
+                
+                <div class="cart-items"></div>
+                    
+                <div class="cart-total">
+                    <strong class="cart-total-title">Totalpris: </strong>
+                    <span class="cart-total-price">€0</span>
+                </div>
+                    
+                <button class="btn-buynow" type="button">Bekreft kjøp</button>
+            </section>
+        </nav>
+        
+    </header>
+
+    <main>
+        
+        <h1>Forsvarsspillere</h1>
+
+        <div class="df">
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/vvd.png" alt="Virgil Van Dijk"></a>
+                    <p class="beskrivelse">(29å) Sterk, rask og duellsterk midtstopper fra Nederland</p>
+                </article>
+                <h2 class="item-title">Virgil Van Dijk</h2>
+                <article class="price">
+                    <span class="item-price">€80 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/ramos.png" alt="Sergio Ramos"></a>
+                    <p class="beskrivelse">(34å) Målfarlig og ekstremt rutinert vinnerskalle fra Spania</p>
+                </article>
+                <h2 class="item-title">Sergio Ramos</h2>
+                <article class="price">
+                    <span class="item-price">€14 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/haitam.png" alt="Haitam Aleesami"></a>
+                    <p class="beskrivelse">(29å) Helt middelmåldig venstreback fra Norge</p>
+                </article>
+                <h2 class="item-title">Haitam Aleesami</h2>
+                <article class="price">
+                    <span class="item-price">€1.2 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+            
+        </div>
+
+        <h1>Midtbanespillere</h1>
+
+        <div class="mf">
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/radja.png" alt="Radja Nainggolan"></a>
+                    <p class="beskrivelse">(32å) Målfarlig og arbeidsom midtbanespiller fra Belgia</p>
+                </article>
+                <h2 class="item-title">Radja Nainggolan</h2>
+                <article class="price">
+                    <span class="item-price">€15 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/stefan.png" alt="Stefan Johansen"></a>
+                    <p class="beskrivelse">(29å) Defensiv midtbanegeneral fra Norge</p>
+                </article>
+                <h2 class="item-title">Stefan Johansen</h2>
+                <article class="price">
+                    <span class="item-price">€3 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/vdb.png" alt="Donny Van de Beek"></a>
+                    <p class="beskrivelse">(23å) Løpssterk, smart og teknisk begavet midtbanespiller fra Nederland</p>
+                </article>
+                <h2 class="item-title">Donny Van de Beek</h2>
+                <article class="price">
+                    <span class="item-price">€44 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+
+        </div>
+
+        <h1>Angrepsspillere</h1>
+
+        <div class="fw">
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/mg11.png" alt="Mason Greenwood"></a>
+                    <p class="beskrivelse">(19å) Ung, meget målfarlig tofotet spiss fra England</p>
+                </article>
+                <h2 class="item-title">Mason Greenwood</h2>
+                <article class="price">
+                    <span class="item-price">€50 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+            
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/braut.png" alt="Erling Braut Haaland"></a>
+                    <p class="beskrivelse">(20å) Sterk, hurtig, ung målmaskin fra Norge</p>
+                </article>
+                <h2 class="item-title">Erling Braut Haaland</h2>
+                <article class="price">
+                    <span class="item-price">€80 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+
+            <div>
+                <article class="img-wrap">
+                    <a href=""><img class="item-img" src="./img/falcao.png" alt="Radamel Falcao"></a>
+                    <p class="beskrivelse">(34å) Rutinert hodesterk spiss fra Colombia</p>
+                </article>
+                <h2 class="item-title">Radamel Falcao</h2>
+                <article class="price">
+                    <span class="item-price">€4.2 millioner</span>
+                    <button class="add2cart" type="button">Legg i handlekurv</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h1 id="footer-h1">PlayerShop</h1>
+    </footer>
+    
+</body>
+</html>
